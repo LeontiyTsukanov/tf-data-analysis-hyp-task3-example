@@ -6,6 +6,6 @@ chat_id = 407415686 # Ваш chat ID, не меняйте название пе�
 
 def solution(x, y) -> bool: # Одна или две выборке на входе, заполняется исходя из условия
     flag = False
-    if ttest_ind(x, y, equal_var=False, alternative=alternative).pvalue >= 0.01:
+    if ttest_ind(x, y, equal_var=False, alternative="less").pvalue >= 0.01:
         flag = True
     return flag # Ваш ответ, True или False
